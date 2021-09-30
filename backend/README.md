@@ -26,7 +26,7 @@
 4. Account : 300,000 DSET + 100 Alice SIG
 
 ```bash
-runCreateAccountExample
+Prelude> runCreateAccountExample
 ```
 
 ### Setp 2: Alice - Create Contract
@@ -43,7 +43,7 @@ runCreateAccountExample
 5. Contract : 50,000 DSET + Alice SIG + NFT
 
 ```bash
-runCreateContractExample
+Prelude> runCreateContractExample
 ```
 
 ### Step 3 : Alice - Create Logic
@@ -58,7 +58,7 @@ runCreateContractExample
 6. Logic : Shame Token
 
 ```bash
-runCreateLogicExample
+Prelude> runCreateLogicExample
 ```
 
 ### Step 4: Bob - Create Account
@@ -88,7 +88,7 @@ runCreateLogicExample
 6. Logic : Shame Token
 
 ```bash
-runSignContractExample
+Prelude> runSignContractExample
 ```
 
 ### Step 6: Charlie Create Account
@@ -132,7 +132,7 @@ runSignContractExample
 6. Logic : Alice SIG  + Charlie SIG  + 110,000 DSET + Shame Token
 
 ```bash
-runAccuseExample
+Prelude> runAccuseExample
 ```
 
 ### Step 9: Charlie Mediates
@@ -147,7 +147,7 @@ runAccuseExample
 6. Logic : Alice SIG  + Charlie SIG  + 110,000 DSET+ Shame Token
 
 ```bash
-runMediateExample
+Prelude> runMediateExample
 ```
 
 ### Step 10: Alice / Bob / Charlie Collects Logic
@@ -171,7 +171,7 @@ runMediateExample
 5. Contract : 100,000 DSET + Bob SIG + Charlie SIG + NFT
 
 ```bash
-runLogicCollectExample
+Prelude> runLogicCollectExample
 ```
 
 ### Step 11: Bob Leaves Contract
@@ -199,5 +199,5 @@ runLogicCollectExample
 5. Contract : NFT
 
 ```bash
-runLeaveContractExample
+Prelude> runLeaveContractExample
 ```
