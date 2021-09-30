@@ -1,0 +1,79 @@
+Cabal-Version:      2.4
+Name:               digiservices
+Version:            0.1.0.0
+Author:             The DigiServices Developers
+Maintainer:         DigiServices
+Build-Type:         Simple
+Copyright:          © 2021 The DigiServices Developers
+License:            MIT
+License-files:      LICENSE
+
+library
+  hs-source-dirs:      src, test
+  exposed-modules:     Spec.Run
+                     , Spec.Sample
+                     , Spec.Example
+                     , Spec.Trace
+                     , Membership.PlatformSettings
+                     , Membership.Account
+                     , Membership.Contract
+                     , Membership.Service
+                     , Membership.Logic
+                     , Membership.Utils
+                     , Membership.OnChain.Account
+                     , Membership.OnChain.Signature
+                     , Membership.OnChain.Contract
+                     , Membership.OnChain.Logic
+                     , Membership.OnChain.Utils
+                     , Membership.OnChain.ShameToken
+                     , Membership.OffChain.Account
+                     , Membership.OffChain.Contract
+                     , Membership.OffChain.Logic
+                     , Membership.OffChain.Utils
+                     , Membership.ShameToken
+                     , Membership.Signature
+  build-depends:       aeson
+                     , base ^>=4.14.1.0
+                     , bytestring
+                     , containers
+                     , data-default
+                     , freer-extras
+                     , lens
+                     , playground-common
+                     , plutus-contract
+                     , plutus-ledger
+                     , plutus-ledger-api
+                     , plutus-tx-plugin
+                     , plutus-tx
+                     , plutus-use-cases
+                     , prettyprinter
+                     , QuickCheck
+                     , tasty
+                     , tasty-quickcheck
+                     , text
+  default-language:    Haskell2010
+  ghc-options:         -Wall -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas -fno-strictness -fno-spec-constr -fno-specialise
+
+test-suite digiservices-tests
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs: test
+  other-modules:       Spec.Model
+                     , Spec.Trace
+  default-language: Haskell2010
+  ghc-options:         -Wall -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas
+  build-depends:       base ^>=4.14.1.0
+                     , containers
+                     , data-default
+                     , freer-extras
+                     , lens
+                     , plutus-contract
+                     , plutus-ledger
+                     , digiservices
+                     , plutus-tx
+                     , QuickCheck
+                     , tasty
+                     , tasty-quickcheck
+                     , text
+  if !(impl(ghcjs) || os(ghcjs))
+    build-depends: plutus-tx-plugin -any
