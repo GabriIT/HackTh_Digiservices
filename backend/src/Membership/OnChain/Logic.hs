@@ -81,7 +81,7 @@ import PlutusTx.Prelude
 
 -- TODO: Verify validity and consistency of SIG tokens
 
--- The validator that is triggered when a user want's to accuse someone
+-- The validator that is triggered when a user wants to accuse someone
 {-# INLINEABLE mkLogicValidator #-}
 mkLogicValidator :: LogicSettings -> LogicState -> LogicRedeemer -> ScriptContext -> Bool
 mkLogicValidator logicSettings LSWaitingStart (LRAccuse accusation) ctx =
