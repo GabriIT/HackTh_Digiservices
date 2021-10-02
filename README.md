@@ -9,4 +9,5 @@ Parties that refuse to follow the rules pre-defined in the contract will be pena
 ## Video Links
 
 1 - Front-End
-2 - imulation Code
+
+2 - Simulation Code
