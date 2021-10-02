@@ -8,6 +8,10 @@ Parties that refuse to follow the rules pre-defined in the contract will be pena
 
 ## Video Links
 
-1 - Front-End
+1 -  Create Logic https://youtu.be/tb5IOoM9Pms 
 
-2 - Simulation Code
+2 - Bob Sign   https://youtu.be/6ZW1kvif2Bc
+
+3 - Collect Logic https://youtu.be/7-TEWMebwgY 
+
+
