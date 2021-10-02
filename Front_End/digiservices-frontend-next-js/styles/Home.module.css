@@ -1,0 +1,12 @@
+.container {
+  padding: 0 4rem;
+
+}
+
+.custom_line::before {
+  background: #2194f3;
+}
+
+.custom_item{
+
+}
